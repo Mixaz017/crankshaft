@@ -63,7 +63,7 @@ jobs:
         uses: actions/download-artifact@v4
 
       - name: Create nightly release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           files: binaries-*/*
           body_path: ${{ github.workspace }}/.github/workflows/notes.md
